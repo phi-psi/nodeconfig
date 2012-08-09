@@ -1,8 +1,10 @@
 config com com
 	list com	ffrl
+	list com	ac
 	list com	d
 	list com	du
 	list com	kr
+	list com	me
 	list com	mg
 	list com	ne
 	list com	gmrv
@@ -17,7 +19,19 @@ config ffz ffrl
 	option bssid	02:CA:FF:EE:FF:FF
 	option subnet	"10.0.0.0/16"
 	option ip6ula	"fda0:747e:ab29:ff::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	none
+
+config ffz ac
+	option name	"Aachen"
+	option com	'ffac'
+	option channel	1
+	option batssid	FFAC-BATBONE
+	option bssid	12:ca:ff:ee:ba:be
+	option subnet	"10.90.0.0/16"
+	option ip6ula	"fda0:747e:ab29:ffac::/64"
+	option ssid1	"www.freifunk-rheinland.net"
+	option n2n	ffrln2n1
 
 config ffz d 
 	option name	"Düsseldorf"
@@ -27,6 +41,7 @@ config ffz d
 	option bssid	02:CA:FF:EE:BA:BE
 	option subnet	"10.40.0.0/16"
 	option ip6ula	"fda0:747e:ab29:cafe::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n
 
 config ffz du
@@ -37,6 +52,7 @@ config ffz du
 	option bssid	02:CA:FF:EE:02:03
 	option subnet	"10.71.0.0/16"
 	option ip6ula	"fda0:747e:ab29:203::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n
 
 config ffz kr 
@@ -47,6 +63,7 @@ config ffz kr
 	option bssid	12:CA:FF:EE:BA:BE
 	option subnet	"10.41.0.0/16"
 	option ip6ula	"fda0:747e:ab29:babe::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n
 
 config ffz mg 
@@ -57,6 +74,7 @@ config ffz mg
 	option bssid	02:CA:FF:EE:21:61
 	option subnet	"10.140.0.0/16"
 	option ip6ula	"fda0:747e:ab29:2161::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n
 
 config ffz ne 
@@ -67,6 +85,7 @@ config ffz ne
 	option bssid	B2:CA:FF:EE:BA:BE
 	option subnet	"10.28.0.0/16"
 	option ip6ula	"fda0:747e:ab29:beef::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n
 
 config ffz gmrv 
@@ -77,6 +96,7 @@ config ffz gmrv
 	option bssid	02:CA:FF:EE:21:95
 	option subnet	"10.57.0.0/16"
 	option ip6ula	"fda0:747e:ab29:2195::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option ssid2	"Freifunk Radevormwald"
 	option n2n	ffrln2n1
 
@@ -88,6 +108,7 @@ config ffz sg
 	option bssid	02:40:00:43:43:43
 	option subnet	"10.7.0.0/16"
 	option ip6ula	"fda0:747e:ab29:dead::/64"
+	option ssid1	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n
 
 config ffz w 
@@ -98,7 +119,8 @@ config ffz w
 	option bssid	02:CA:FF:EE:E1:BA
 	option subnet	"10.3.0.0/16"
 	option ip6ula	"fda0:747e:ab29:e1ba::/64"
-	option ssid2	"www.freifunk-wuppertal.net"
+	option ssid1	"www.freifunk-wuppertal.net"
+	option ssid2	"www.freifunk-rheinland.net"
 	option n2n	ffrln2n1
 
 config n2n ffrln2n
